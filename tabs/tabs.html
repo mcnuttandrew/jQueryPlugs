@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>tabs plugin</title>
+    <script src="./jquery-2.1.1.js"></script>
+    <script src="./tabs.js"></script>
+    <link href="./tabs.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    
+    <ul class="tabs" data-content-tabs="#content-tabs">
+        <li> <a href="#first" class="active"> Introduction </a> </li>
+        <li> <a href="#second"> Background </a> </li>
+        <li> <a href="#third"> Behaviour </a> </li>
+    </ul>
+    <div id="content-tabs"> 
+      <div class="tab-pane active" id="first"> 
+          <p>Doctor John A. Zoidberg, also known simply as Zoidberg, is a fictional character in the television series Futurama. He is a Decapodian, a lobster-esque alien who works as the staff doctor for Planet Express, despite his woeful understanding of human physiology and allusions to his questionable credentials. His character parodies both doctors - for example, his woeful incompetence at human medicine makes him extremely poor despite his profession, and he's implied to be frequently homeless when not at work - and immigrant Yiddish culture. </p>
+      </div>
+      <div class="tab-pane" id="second"> 
+          <p> Zoidberg is named after an Apple II game that David X. Cohen created in high school called Zoid, similar to the game Qix. The game was rejected by Broderbund.[2][3][4] One of Cohen's inspirations for the character of Dr. Zoidberg was the fact that Star Trek character Leonard McCoy, the ship's doctor, frequently administered medical treatment to aliens such as Spock, so Cohen wished human characters in Futurama to be in the uneasy situation of being treated by an alien doctor.</p>
+      </div>
+      <div class="tab-pane" id="third"> 
+          <p>When frightened or fleeing from danger, Zoidberg makes a high-pitched whooping sound, similar to Curly of The Three Stooges, or squirts ink at his attacker. It is revealed in "The Cryonic Woman" that one of Zoidberg's fantasies is to become a grandmother. "A Taste of Freedom" and Bender's Game indicate that Zoidberg harbored a childhood dream of working in show business as a comedian or song-and-dance man, but that his parents pushed him to become a doctor. </p>
+      </div>
+    </div>
+    
+    <script>
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+    
+  </body>
+</html>

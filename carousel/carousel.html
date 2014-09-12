@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>carousel plugin</title>
+    <script src="./jquery-2.1.1.js"></script>
+    <script src="./carousel.js"></script>
+    <link href="./carousel.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    
+    <div class="carousel">
+      <div class="items"> 
+        <img src="http://placecorgi.com/400" class="active" id="0"/>
+        <img src="http://placecorgi.com/399" id="1"/>
+        <img src="http://placecorgi.com/398" id="2"/> 
+      </div>
+     </div>
+    <div class="links">
+      <a href="#" class="slide-left"> Previous</a>
+      <a href="#" class="slide-right"> Next</a>
+    </div>
+    <script>
+      $(function() {
+        $('.carousel').carousel();
+      })
+    </script>
+    
+  </body>
+</html>
